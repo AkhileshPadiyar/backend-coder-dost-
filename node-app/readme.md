@@ -27,3 +27,7 @@ You can run a .js file i node using command ``` node <filnanme.js> ```
   ```
   const lib = require('./lib.js')
   ```
+- Now to use the fuctions just use
+  ```
+  console.log(lib.sum(a + b))
+  ```
