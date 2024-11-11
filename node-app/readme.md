@@ -31,3 +31,5 @@ You can run a .js file i node using command ``` node <filnanme.js> ```
   ```
   console.log(lib.sum(a + b))
   ```
+
+  ### Everything in node is written asynchronus, to avoid blockage of server
