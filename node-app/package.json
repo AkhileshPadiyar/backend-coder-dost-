@@ -1,12 +1,18 @@
 {
-  "type": "module",
+  "type": "commonjs",
   "name": "node-app",
   "description": "Node js is a runtime environment for javascript, so that we can run our javascript without a web server..\r > It is asnchronus, and non blocking I/0",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "nodeman index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodeman": "^1.1.2",
+    "nodemon": "^3.1.7"
+  }
 }
