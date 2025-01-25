@@ -20,6 +20,11 @@
 2. `db.products.find()` - to show all products
 3. `db.products.insertMany([ obj1, obj2 ])` - insert many objects at once seperated by commas
 > all objects should be passed inside an array [],
-4. 
+4. `db.products.find( {"name" : "Akhilesh"} )` - returns an array of objects with same fields5.
+5. `db.products.findOne( {"name" : "Akhilesh"} )` - return an single object
+> The whole query is as follow `db.proucts.find( {"name" : {$eq: "Akhilesh"}} )` $eq -> equals to(default value)
+> Some others are `$gt, $lt, $lte` etc
+6. `db.products.find($or: [ {obj1}, {obj2} ])` - filters objects on OR operation, change `or` to `and` for and operations
+
 
 
