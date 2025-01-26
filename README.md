@@ -1,3 +1,8 @@
+* [How to setup Mongo databases locally](#how-to-setup-mongo-databases-locally).
+* [Mongo Compass setup](#mongo-compass-setup).
+* [Some shell commands](#some-shell-commands).
+* [Read Operations](#read-operations).
+
 ## How to setup Mongo databases locally
 1. Go to mongo db site and open community server
 2. Download community server, mongo compass and mongo shell
