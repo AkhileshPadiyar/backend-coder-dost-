@@ -25,6 +25,11 @@
 > The whole query is as follow `db.proucts.find( {"name" : {$eq: "Akhilesh"}} )` $eq -> equals to(default value)
 > Some others are `$gt, $lt, $lte` etc
 6. `db.products.find($or: [ {obj1}, {obj2} ])` - filters objects on OR operation, change `or` to `and` for and operations
-
+7. `db.products.find().sort({ "price" : -1 })` - sorts in descending order, 1 for low to high and -1 for high to low.
+> These functions are known as cursor functions some more are
+8. `db.products.find().limit(2)` - shows the top two products
+9. `db.products.countDocuments()` - count the number of documents, you can pass filters just as the `find` funtion in this too..
+10. ` db.products.find({"price" : {$gt : 1}}, {"title" : 1, "price" : 1})` - this will now show only the title and price of the products
+> id will be shown as default to hide it you have to do  `db.products.find({"price" : {$gt : 1}}, {"title" : 1, "price" : 1, "_id": 0})`
 
 
