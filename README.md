@@ -1,5 +1,8 @@
 For all this refer to [Mongo DB Manual](https://www.mongodb.com/docs/manual/?msockid=1a966eafd1ae6d9b29dd7d06d0a86c0d)
 
+> [!Note]
+> In Non SQL databases -> db server -> databases -> collections -> documents
+
 ## How to setup Mongo databases locally
 1. Go to mongo db site and open community server
 2. Download community server, mongo compass and mongo shell
@@ -44,6 +47,10 @@ For all this refer to [Mongo DB Manual](https://www.mongodb.com/docs/manual/?mso
 1. `db.products.updateOne( {'id' : 1}, { $set: {"price" : 999} } )` - update the price of product with id one
 > [!Note]
 > Unlike node the changes made in the collections will be permanent as this is a database
-2. `db.products.updateOne( {'id' : 1}, { $set: {"OS" : "MacOs"} } )` - if feild doesnot exist it will create that feild
+2. `db.products.updateOne( {'id' : 1}, { $set: {"OS" : "MacOs"} } )` - if feild doesnot exist it will create that field
+3. `db.products.updateOne( {"id" : 7}, { $set: {"OS": "MacOS"}}, {"upsert" : true} )` - if the value doesn't it creates one.
+
+## Delete Operations
+1. `db.products.deleteOne( {"id" : 7} )` - delete the feild with id : 7
 
 
