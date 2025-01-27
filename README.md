@@ -1,7 +1,4 @@
-* [How to setup Mongo databases locally](#how-to-setup-mongo-databases-locally).
-* [Mongo Compass setup](#mongo-compass-setup).
-* [Some shell commands](#some-shell-commands).
-* [Read Operations](#read-operations).
+For all this refer to [Mongo DB Manual]{https://www.mongodb.com/docs/manual/?msockid=1a966eafd1ae6d9b29dd7d06d0a86c0d}
 
 ## How to setup Mongo databases locally
 1. Go to mongo db site and open community server
@@ -42,5 +39,11 @@
 10. ` db.products.find({"price" : {$gt : 1}}, {"title" : 1, "price" : 1})` - this will now show only the title and price of the products
 > [!Note]
 > id will be shown as default to hide it you have to do `db.products.find({"price" : {$gt : 1}}, {"title" : 1, "price" : 1, "_id": 0})`
+
+## Update Operations
+1. `db.products.updateOne( {'id' : 1}, { $set: {"price" : 999} } )` - update the price of product with id one
+> [!Note]
+> Unlike node the changes made in the collections will be permanent as this is a database
+2. `db.products.updateOne( {'id' : 1}, { $set: {"OS" : "MacOs"} } )` - if feild doesnot exist it will create that feild
 
 
