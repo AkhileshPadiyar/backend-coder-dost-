@@ -1,4 +1,4 @@
-For all this refer to [Mongo DB Manual]{https://www.mongodb.com/docs/manual/?msockid=1a966eafd1ae6d9b29dd7d06d0a86c0d}
+For all this refer to [Mongo DB Manual](https://www.mongodb.com/docs/manual/?msockid=1a966eafd1ae6d9b29dd7d06d0a86c0d)
 
 ## How to setup Mongo databases locally
 1. Go to mongo db site and open community server
